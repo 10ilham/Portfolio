@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Website Ilham Munawar</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/ham.jpg" rel="ham">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="fontefek.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+
+  <!-- =======================================================
+  * Template Name: Laura
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+        <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+        <li><a class="nav-link scrollto" href="#services">Tim Saya</a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+        <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+        <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+
+      <style>
+        .letter {
+          display: inline-block;
+          margin-right: 10px;
+        }
+      </style>
+      
+      <div>
+        <div class="monyet">
+          <div class="monyet col-md-12 mt-4">
+        <span>I</span>
+        <span>L</span>
+        <span>H</span>
+        <span>A</span>
+        <span>M</span>
+      </div>
+      <span>M U N A W A R</span>
+      
+
+      <!-- fungsi untuk style dibawah -->
+      <h2><span><span class="text-animasi">Hallo semuanya!</span></span></h2>
+      <h2><span id="textAnimasi"><span class="text-animasi"></span></h2>
+      <!-- <h2><span class="text-rotating">Hallo semuanya!</span></h2> -->
+      <!-- style css untuk fungsi diatas -->
+      <style>
+        @keyframes rotate {
+          0% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          33.33% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+
+          66.67% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .text-animasi {
+          /* display type untuk animasi */
+          display: inline;
+          /* Jika mau menjalankan animasi berikan second dibawah 0s -> 2s */
+          animation: rotate 3s linear 4;
+          /* linear 2 untuk mengatur munculnya text */
+          font-size: 15px;
+        }
+      </style>
+
+      <script>
+        // JavaScript untuk mengubah teks rotasi setiap beberapa detik
+        /* const textRotating = document.getElementById("textRotating");
+        const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
+
+        let currentIndex = 0;
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % texts.length;
+          textRotating.innerHTML = texts[currentIndex];
+        }, 2 * 1000); */
+      </script>
+
+<style>
+  .text-rotating {
+    overflow: hidden;
+    border-right: .15em solid orange; /* Simulasikan kursor */
+    white-space: nowrap; /* Mencegah pemisahan kata */
+    margin: 0 auto; /* Memusatkan teks jika diperlukan */
+    letter-spacing: .15em; /* Ruang antar huruf */
+    animation:
+      typing 3s steps(40, end),
+      blinking-caret .75s step-end infinite;
+  }
+
+  /* Animasi ketik */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* Animasi kursor berkedip */
+  @keyframes blinking-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+</style>
+
+<!-- Fungsi untuk rotasi -->
+<h2><span class="text-rotating"></span></h2>
+
+<script>
+  // JavaScript untuk mengubah teks rotasi dengan efek ketik dan hapus
+  const textRotating = document.querySelector('.text-rotating');
+  const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
+  let textIndex = 0;
+  let charIndex = 0;
+
+  function typeText() {
+    if (charIndex < texts[textIndex].length) {
+      textRotating.textContent += texts[textIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(typeText, 100); // Waktu antar karakter ketika diketik
+    } else {
+      setTimeout(eraseText, 1500); // Waktu tunda setelah teks selesai ditampilkan
+    }
+  }
+
+  function eraseText() {
+    if (charIndex > 0) {
+      textRotating.textContent = texts[textIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(eraseText, 50); // Waktu antar karakter saat dihapus
+    } else {
+      textIndex = (textIndex + 1) % texts.length;
+      setTimeout(typeText, 500); // Waktu tunda sebelum teks berikutnya diketik
+    }
+  }
+
+  // Mulai animasi
+  typeText();
+
+</script>
+
+
+      <a href="#about" class="btn-scroll scrollto" title="Geser Kebawah"><i class="bx bx-chevron-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Me Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Tentang saya</span>
+          <h2>Biodata</h2>
+          <p> </p>
+        </div>
+
+        <title>Data Diri</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+        <style>
+          li {
+              margin-bottom: 10px;
+              display: flex;
+              align-items: center;
+          }
+  
+          strong {
+              margin-right: 5px;
+              width: 180px;
+          }
+      </style>
+        <div class="row">
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+
+                    <li><i class="bi bi-chevron-right"></i> <strong>Nama</strong>: &nbsp<span>Ilham Munawar</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>NIM</strong>: &nbsp<span>220102037</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Tempat, tanggal lahir</strong>:&nbsp<span>Garut, 14 Januari 2004</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Alamat</strong>:&nbsp<span>Cilacap, Jawa tengah</span></li>
+                    
+                    
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Usia</strong>: &nbsp<span>19</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Status</strong>: &nbsp<span>Mahasiswa</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email</strong>: &nbsp<span><a href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A10i.munawar@gmail.com" target="_blank">Klik disini👋</a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Bidang keahlian</strong>: &nbsp<span>IT</span></li>
+                  </ul>
+                </div>
+              </div>
+               <div class="row mt-n4"> 
+               <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile" style="color: #20b38e;"></i>
+                    <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" -->
+                      <!-- class="purecounter"></span> -->
+                    <!-- <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p> -->
+                  </div>
+                 </div> 
+
+                <!-- <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtextr" style="color: #8a1ac2;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan
+                    </p>
+                  </div>
+                </div> -->
+
+                <!-- <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock" style="color: #2cbdee;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate
+                      non vel</p>
+                  </div>
+                </div> -->
+
+                <!-- <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award" style="color: #ffb459;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                  </div>
+                </div>
+              </div>
+            </div>End .content -->
+
+            <div class="skills-content ps-lg-4">
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">C++ <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">php <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Me Section -->
+
+    <!-- ======= My Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Resume</span>
+          <h2>Resume</h2>
+          <p> </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Ringkasan</h3>
+            <div class="resume-item pb-0">
+              <h4>Ilham Munawar</h4>
+              <p><em>Seseorang yang memiliki hobi sebagai Programmer dan Bermain bola.</em></p>
+            </div>   
+
+            <h3 class="resume-title">Pendidikan</h3>
+            <div class="resume-item">
+              <h4>SMA</h4>
+              <h5>2019 - 2022</h5>
+              <p><em>SMAN 5 Garut <br>&#x2193; <br>MIPA</em>
+            </div>
+
+            <div class="resume-item">
+              <h4>smp</h4>
+              <h5>2017 - 2019</h5>
+              <p><em>Madrasah Tsanawiyah (MTs)</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>SD</h4>
+              <h5>2010 - 2016</h5>
+              <p><em>SDN Pameungpeuk 2</em>
+            </div>
+            <div class="resume-item">
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-6">
+            <h3 class="resume-title">Organisasi</h3>
+            <div class="resume-item">
+              <h4>Patroli Keamanan Sekolah</h4>
+              <h5>2019 - 2022</h5>
+              <p><em>SMAN 5 Garut </em></p>
+            </div>
+            <div class="resume-item">
+            </div>
+          </div> -->
+          
+          <div class="col-lg-6">
+            <h3 class="resume-title">Organisasi</h3>
+            <div class="resume-item">
+              <h4>Patroli Keamanan Sekolah</h4>
+              <h5>2019 - 2022</h5>
+              <p><em>SMAN 5 Garut </em></p>
+            </div>
+            <div class="resume-item">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End My Resume Section -->
+
+    <!-- ======= My Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Tim Saya</span>
+          <h2>Tim Saya</h2>
+          <p>The great team</p>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                occaecati cupiditate non provident</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque</p>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End My Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/ti.png" class="testimonial-img" alt="">
+                <h3>TI 1B</h3>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  One Voice, One Family👋
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= My Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Portfolio</span>
+          <h2>Portfolio</h2>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">Blog</li>
+          <!-- <li data-filter=".filter-card">Card</li> -->
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/2.svg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Blog Saya</h4>
+
+              <!-- Blog -->
+              <a href="assets/img/portfolio/2.svg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Blog"><i class="bx bx-plus"></i></a>
+              <a href="https://ilhamajaa.blogspot.com/" target="_blank" class="details-link" title="Lihat lebih lanjut"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <!-- Web -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/1.svg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web saya yang lain</h4>
+
+              <a href="assets/img/portfolio/1.svg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Website"><i class="bx bx-plus"></i></a>
+              <a href="http://ilhamunawarr.epizy.com/" target="_blank" class="details-link" title="Lihat lebih lanjut"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/1.svg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/1.svg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="http://ilhamunawarr.epizy.com/" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End My Portfolio Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Pricing</span>
+          <h2>Pricing</h2>
+          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Pricing Section -->
+
+    <!-- ======= Contact Me Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Kontak Saya</span>
+          <h2>Kontak Saya</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-share-alt"></i>
+                  <h3>Profil Sosial Media</h3>
+                  <div class="social-links">
+                    <a href="https://twitter.com/Munawar34617349" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="https://fb.monyettky.repl.co" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/10i.munawar/" target="https://www.instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCPZrXiLlwIWjZvs1m83mW0A" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
+                    <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email</h3>
+                  <p><a href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A10i.munawar@gmail.com" target="_blank">contact@gmail.com</a></p>
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <!-- <h3>Call Me</h3>
+                  <p>+1 5589 55488 55</p> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>    
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Me Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Ilham Munawar</h3>
+      
+      <div class="social-links">
+        <a href="https://twitter.com/Munawar34617349" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://fb.monyettky.repl.co" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/10i.munawar/" target="https://www.instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCPZrXiLlwIWjZvs1m83mW0A" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ilham</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
