@@ -88,141 +88,149 @@
           margin-right: 10px;
         }
       </style>
-      
+
       <div>
         <div class="monyet">
           <div class="monyet col-md-12 mt-4">
-        <span>I</span>
-        <span>L</span>
-        <span>H</span>
-        <span>A</span>
-        <span>M</span>
-      </div>
-      <span>M U N A W A R</span>
-      
-
-      <!-- fungsi untuk style dibawah -->
-      <h2><span><span class="text-animasi">Hallo semuanya!</span></span></h2>
-      <h2><span id="textAnimasi"><span class="text-animasi"></span></h2>
-      <!-- <h2><span class="text-rotating">Hallo semuanya!</span></h2> -->
-      <!-- style css untuk fungsi diatas -->
-      <style>
-        @keyframes rotate {
-          0% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-
-          33.33% {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-
-          66.67% {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .text-animasi {
-          /* display type untuk animasi */
-          display: inline;
-          /* Jika mau menjalankan animasi berikan second dibawah 0s -> 2s */
-          animation: rotate 3s linear 4;
-          /* linear 2 untuk mengatur munculnya text */
-          font-size: 15px;
-        }
-      </style>
-
-      <script>
-        // JavaScript untuk mengubah teks rotasi setiap beberapa detik
-        /* const textRotating = document.getElementById("textRotating");
-        const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
-
-        let currentIndex = 0;
-        setInterval(() => {
-          currentIndex = (currentIndex + 1) % texts.length;
-          textRotating.innerHTML = texts[currentIndex];
-        }, 2 * 1000); */
-      </script>
-
-<style>
-  .text-rotating {
-    overflow: hidden;
-    border-right: .15em solid orange; /* Simulasikan kursor */
-    white-space: nowrap; /* Mencegah pemisahan kata */
-    margin: 0 auto; /* Memusatkan teks jika diperlukan */
-    letter-spacing: .15em; /* Ruang antar huruf */
-    animation:
-      typing 3s steps(40, end),
-      blinking-caret .75s step-end infinite;
-  }
-
-  /* Animasi ketik */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  /* Animasi kursor berkedip */
-  @keyframes blinking-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
-  }
-</style>
-
-<!-- Fungsi untuk rotasi -->
-<h2><span class="text-rotating"></span></h2>
-
-<script>
-  // JavaScript untuk mengubah teks rotasi dengan efek ketik dan hapus
-  const textRotating = document.querySelector('.text-rotating');
-  const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
-  let textIndex = 0;
-  let charIndex = 0;
-
-  function typeText() {
-    if (charIndex < texts[textIndex].length) {
-      textRotating.textContent += texts[textIndex].charAt(charIndex);
-      charIndex++;
-      setTimeout(typeText, 100); // Waktu antar karakter ketika diketik
-    } else {
-      setTimeout(eraseText, 1500); // Waktu tunda setelah teks selesai ditampilkan
-    }
-  }
-
-  function eraseText() {
-    if (charIndex > 0) {
-      textRotating.textContent = texts[textIndex].substring(0, charIndex - 1);
-      charIndex--;
-      setTimeout(eraseText, 50); // Waktu antar karakter saat dihapus
-    } else {
-      textIndex = (textIndex + 1) % texts.length;
-      setTimeout(typeText, 500); // Waktu tunda sebelum teks berikutnya diketik
-    }
-  }
-
-  // Mulai animasi
-  typeText();
-
-</script>
+            <span>I</span>
+            <span>L</span>
+            <span>H</span>
+            <span>A</span>
+            <span>M</span>
+          </div>
+          <span>M U N A W A R</span>
 
 
-      <a href="#about" class="btn-scroll scrollto" title="Geser Kebawah"><i class="bx bx-chevron-down"></i></a>
-    </div>
+          <!-- fungsi untuk style dibawah -->
+          <h2><span><span class="text-animasi">Hallo semuanya!</span></span></h2>
+          <h2><span id="textAnimasi"><span class="text-animasi"></span></h2>
+          <!-- <h2><span class="text-rotating">Hallo semuanya!</span></h2> -->
+          <!-- style css untuk fungsi diatas -->
+          <style>
+            @keyframes rotate {
+              0% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+
+              33.33% {
+                opacity: 0;
+                transform: translateY(30px);
+              }
+
+              66.67% {
+                opacity: 0;
+                transform: translateY(30px);
+              }
+
+              100% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            .text-animasi {
+              /* display type untuk animasi */
+              display: inline;
+              /* Jika mau menjalankan animasi berikan second dibawah 0s -> 2s */
+              animation: rotate 3s linear 4;
+              /* linear 2 untuk mengatur munculnya text */
+              font-size: 15px;
+            }
+          </style>
+
+          <script>
+            // JavaScript untuk mengubah teks rotasi setiap beberapa detik
+            /* const textRotating = document.getElementById("textRotating");
+            const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
+    
+            let currentIndex = 0;
+            setInterval(() => {
+              currentIndex = (currentIndex + 1) % texts.length;
+              textRotating.innerHTML = texts[currentIndex];
+            }, 2 * 1000); */
+          </script>
+
+          <style>
+            .text-rotating {
+              overflow: hidden;
+              border-right: .15em solid orange;
+              /* Simulasikan kursor */
+              white-space: nowrap;
+              /* Mencegah pemisahan kata */
+              margin: 0 auto;
+              /* Memusatkan teks jika diperlukan */
+              letter-spacing: .15em;
+              /* Ruang antar huruf */
+              animation:
+                typing 3s steps(40, end),
+                blinking-caret .75s step-end infinite;
+            }
+
+            /* Animasi ketik */
+            @keyframes typing {
+              from {
+                width: 0;
+              }
+
+              to {
+                width: 100%;
+              }
+            }
+
+            /* Animasi kursor berkedip */
+            @keyframes blinking-caret {
+
+              from,
+              to {
+                border-color: transparent;
+              }
+
+              50% {
+                border-color: orange;
+              }
+            }
+          </style>
+
+          <!-- Fungsi untuk rotasi -->
+          <h2><span class="text-rotating"></span></h2>
+
+          <script>
+            // JavaScript untuk mengubah teks rotasi dengan efek ketik dan hapus
+            const textRotating = document.querySelector('.text-rotating');
+            const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
+            let textIndex = 0;
+            let charIndex = 0;
+
+            function typeText() {
+              if (charIndex < texts[textIndex].length) {
+                textRotating.textContent += texts[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, 100); // Waktu antar karakter ketika diketik
+              } else {
+                setTimeout(eraseText, 1500); // Waktu tunda setelah teks selesai ditampilkan
+              }
+            }
+
+            function eraseText() {
+              if (charIndex > 0) {
+                textRotating.textContent = texts[textIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseText, 50); // Waktu antar karakter saat dihapus
+              } else {
+                textIndex = (textIndex + 1) % texts.length;
+                setTimeout(typeText, 500); // Waktu tunda sebelum teks berikutnya diketik
+              }
+            }
+
+            // Mulai animasi
+            typeText();
+
+          </script>
+
+
+          <a href="#about" class="btn-scroll scrollto" title="Geser Kebawah"><i class="bx bx-chevron-down"></i></a>
+        </div>
   </section><!-- End Hero -->
 
   <main id="main">
@@ -241,16 +249,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
         <style>
           li {
-              margin-bottom: 10px;
-              display: flex;
-              align-items: center;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
           }
-  
+
           strong {
-              margin-right: 5px;
-              width: 180px;
+            margin-right: 5px;
+            width: 180px;
           }
-      </style>
+        </style>
         <div class="row">
           <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
           <div class="col-lg-8 d-flex flex-column align-items-stretch">
@@ -261,30 +269,34 @@
 
                     <li><i class="bi bi-chevron-right"></i> <strong>Nama</strong>: &nbsp<span>Ilham Munawar</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>NIM</strong>: &nbsp<span>220102037</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Tempat, tanggal lahir</strong>:&nbsp<span>Garut, 14 Januari 2004</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Alamat</strong>:&nbsp<span>Cilacap, Jawa tengah</span></li>
-                    
-                    
+                    <li><i class="bi bi-chevron-right"></i> <strong>Tempat, tanggal lahir</strong>:&nbsp<span>Garut, 14
+                        Januari 2004</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Alamat</strong>:&nbsp<span>Cilacap, Jawa
+                        tengah</span></li>
+
+
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
                     <li><i class="bi bi-chevron-right"></i> <strong>Usia</strong>: &nbsp<span>19</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Status</strong>: &nbsp<span>Mahasiswa</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email</strong>: &nbsp<span><a href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A10i.munawar@gmail.com" target="_blank">Klik disini👋</a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email</strong>: &nbsp<span><a
+                          href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A10i.munawar@gmail.com"
+                          target="_blank">Klik disini👋</a></span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Bidang keahlian</strong>: &nbsp<span>IT</span></li>
                   </ul>
                 </div>
               </div>
-               <div class="row mt-n4"> 
-               <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+              <div class="row mt-n4">
+                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-emoji-smile" style="color: #20b38e;"></i>
                     <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" -->
-                      <!-- class="purecounter"></span> -->
+                    <!-- class="purecounter"></span> -->
                     <!-- <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p> -->
                   </div>
-                 </div> 
+                </div>
 
                 <!-- <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
                   <div class="count-box">
@@ -317,53 +329,57 @@
               </div>
             </div>End .content -->
 
-            <div class="skills-content ps-lg-4">
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                <div class="skills-content ps-lg-4">
+                  <div class="progress">
+                    <span class="skill">HTML <i class="val">100%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress">
+                    <span class="skill">CSS <i class="val">95%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                        aria-valuemax="100">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="progress">
-                <span class="skill">C++ <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress">
+                    <span class="skill">JavaScript <i class="val">90%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="progress">
-                <span class="skill">php <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress">
+                    <span class="skill">C++ <i class="val">95%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                        aria-valuemax="100">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
+                  <div class="progress">
+                    <span class="skill">php <i class="val">95%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                        aria-valuemax="100">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
 
           </div>
-        </div>
-
-      </div>
     </section><!-- End About Me Section -->
 
     <!-- ======= My Resume Section ======= -->
@@ -382,31 +398,37 @@
             <div class="resume-item pb-0">
               <h4>Ilham Munawar</h4>
               <p><em>Seseorang yang memiliki hobi sebagai Programmer dan Bermain bola.</em></p>
-            </div>   
+            </div>
 
             <h3 class="resume-title">Pendidikan</h3>
             <div class="resume-item">
               <h3>Perguruan Tinggi</h3>
               <h5>2022 - Present</h5>
-              <p><h4><em>Politeknik Negeri Cilacap </h4><h6>Jurusan </h6> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2193; <br>Teknik Informatika</em></p>
+              <p>
+              <h4><em>Politeknik Negeri Cilacap </h4>
+              <h6>Jurusan </h6> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2193; <br>Teknik Informatika</em></p>
             </div>
 
             <div class="resume-item">
               <h3>SMA</h3>
               <h5>2019 - 2022</h5>
-              <p><h4><em>SMAN 5 Garut </h4> <h6>Jurusan </h6> &nbsp;&nbsp;&nbsp;&#x2193; <br>MIPA</em>
+              <p>
+              <h4><em>SMAN 5 Garut </h4>
+              <h6>Jurusan </h6> &nbsp;&nbsp;&nbsp;&#x2193; <br>MIPA</em>
             </div>
 
             <div class="resume-item">
               <h3>SMP</h3>
               <h5>2017 - 2019</h5>
-              <p><h4><em>Madrasah Tsanawiyah (MTs)</h4></em></p>
+              <p>
+              <h4><em>Madrasah Tsanawiyah (MTs)</h4></em></p>
             </div>
 
             <div class="resume-item">
               <h3>SD</h3>
               <h5>2010 - 2016</h5>
-              <p><h4><em>SDN Pameungpeuk 2</h4></em></p>
+              <p>
+              <h4><em>SDN Pameungpeuk 2</h4></em></p>
             </div>
             <div class="resume-item">
             </div>
@@ -417,24 +439,13 @@
             <div class="resume-item">
               <h4>Patroli Keamanan Sekolah</h4>
               <h5>2019 - 2022</h5>
-              <p><em>SMAN 5 Garut </em></p>
-            </div>
-            <div class="resume-item">
-            </div>
-          </div> -->
-          
-          <div class="col-lg-6">
-            <h3 class="resume-title">Organisasi</h3>
-            <div class="resume-item">
-              <h4>Patroli Keamanan Sekolah</h4>
-              <h5>2019 - 2022</h5>
               <p><h6><em>SMAN 5 Garut </em></h6></p>
             </div>
             <div class="resume-item">
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section><!-- End My Resume Section -->
 
     <!-- ======= My Services Section ======= -->
@@ -484,7 +495,7 @@
             </div>
           </div> -->
 
-        </div>
+      </div>
 
       </div>
     </section><!-- End My Services Section -->
@@ -602,7 +613,8 @@
               <!-- Blog -->
               <a href="assets/img/portfolio/2.svg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Zoom"><i class="bx bx-plus"></i></a>
-              <a href="https://ilhamajaa.blogspot.com/" target="_blank" class="details-link" title="Lihat lebih lanjut"><i class="bx bx-link"></i></a>
+              <a href="https://ilhamajaa.blogspot.com/" target="_blank" class="details-link"
+                title="Lihat lebih lanjut"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -614,7 +626,8 @@
 
               <a href="assets/img/portfolio/1.svg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Zoom"><i class="bx bx-plus"></i></a>
-              <a href="http://ilhamunawarr.epizy.com/" target="_blank" class="details-link" title="Lihat lebih lanjut"><i class="bx bx-link"></i></a>
+              <a href="http://ilhamunawarr.epizy.com/" target="_blank" class="details-link"
+                title="Lihat lebih lanjut"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -805,10 +818,14 @@
                   <i class="bx bx-share-alt"></i>
                   <h3>Profil Sosial Media</h3>
                   <div class="social-links">
-                    <a href="https://twitter.com/Munawar34617349" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="https://fb.monyettky.repl.co" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/10i.munawar/" target="https://www.instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCPZrXiLlwIWjZvs1m83mW0A" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
+                    <a href="https://twitter.com/Munawar34617349" target="_blank" class="twitter"><i
+                        class="bi bi-twitter"></i></a>
+                    <a href="https://fb.monyettky.repl.co" target="_blank" class="facebook"><i
+                        class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/10i.munawar/" target="https://www.instagram.com"
+                      class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCPZrXiLlwIWjZvs1m83mW0A" target="_blank"
+                      class="youtube"><i class="bi bi-youtube"></i></a>
                     <a href="https://github.com/10ilham" target="_blank" class="github"><i class="bi bi-github"></i></a>
                     <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
                   </div>
@@ -818,8 +835,9 @@
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Email</h3>
-                  <p><a href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A10i.munawar@gmail.com" target="_blank">10i.munawar@gmail.com</a></p>
-                  
+                  <p><a href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A10i.munawar@gmail.com"
+                      target="_blank">10i.munawar@gmail.com</a></p>
+
                 </div>
               </div>
               <div class="col-md-6">
@@ -856,7 +874,7 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div>    
+          </div>
 
         </div>
 
@@ -869,12 +887,14 @@
   <footer id="footer">
     <div class="container">
       <h3>Ilham Munawar</h3>
-      
+
       <div class="social-links">
         <a href="https://twitter.com/Munawar34617349" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="https://fb.monyettky.repl.co" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/10i.munawar/" target="https://www.instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCPZrXiLlwIWjZvs1m83mW0A" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com/10i.munawar/" target="https://www.instagram.com" class="instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCPZrXiLlwIWjZvs1m83mW0A" target="_blank" class="youtube"><i
+            class="bi bi-youtube"></i></a>
         <a href="https://github.com/10ilham" target="_blank" class="github"><i class="bi bi-github"></i></a>
       </div>
       <div class="copyright">
