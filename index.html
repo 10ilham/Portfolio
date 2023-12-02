@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -42,41 +44,132 @@
   ======================================================== -->
 </head>
 
+<style>
+  @media only screen and (max-width: 600px) {
+
+    /* Aturan CSS untuk layar dengan lebar maksimum 600px */
+    body {
+      font-size: 14px;
+    }
+
+    /* Aturan CSS lainnya */
+  }
+
+  .container {
+    width: 90%;
+    /* Misalnya, container menggunakan lebar 90% */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+  @keyframes rotate {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    33.33% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    66.67% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .text-animasi {
+    /* display type untuk animasi */
+    display: inline;
+    /* Jika mau menjalankan animasi berikan second dibawah 0s -> 2s */
+    animation: rotate 3s linear 4;
+    /* linear 2 untuk mengatur munculnya text */
+    font-size: 15px;
+  }
+
+
+  .text-rotating {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    /* Simulasikan kursor */
+    white-space: nowrap;
+    /* Mencegah pemisahan kata */
+    margin: 0 auto;
+    /* Memusatkan teks jika diperlukan */
+    letter-spacing: .15em;
+    /* Ruang antar huruf */
+    animation:
+      typing 3s steps(40, end),
+      blinking-caret .75s step-end infinite;
+  }
+
+  /* Animasi ketik */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  /* Animasi kursor berkedip */
+  @keyframes blinking-caret {
+
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: orange;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #navbar ul {
+      display: none;
+      /* Atur properti lainnya sesuai kebutuhan */
+    }
+
+    /* Gaya tombol toggle */
+    .mobile-nav-toggle {
+      display: block;
+      /* Atur properti lainnya sesuai kebutuhan */
+    }
+  }
+</style>
+
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
-
     <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
         <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
         <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
         <li><a class="nav-link scrollto" href="#services">Tim Saya</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-        <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-          </ul>
-        </li> -->
+        <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
         <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
-  </header><!-- End Header -->
+    </nav>
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -106,38 +199,6 @@
           <h2><span id="textAnimasi"><span class="text-animasi"></span></h2>
           <!-- <h2><span class="text-rotating">Hallo semuanya!</span></h2> -->
           <!-- style css untuk fungsi diatas -->
-          <style>
-            @keyframes rotate {
-              0% {
-                opacity: 1;
-                transform: translateY(0);
-              }
-
-              33.33% {
-                opacity: 0;
-                transform: translateY(30px);
-              }
-
-              66.67% {
-                opacity: 0;
-                transform: translateY(30px);
-              }
-
-              100% {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-
-            .text-animasi {
-              /* display type untuk animasi */
-              display: inline;
-              /* Jika mau menjalankan animasi berikan second dibawah 0s -> 2s */
-              animation: rotate 3s linear 4;
-              /* linear 2 untuk mengatur munculnya text */
-              font-size: 15px;
-            }
-          </style>
 
           <script>
             // JavaScript untuk mengubah teks rotasi setiap beberapa detik
@@ -149,84 +210,15 @@
               currentIndex = (currentIndex + 1) % texts.length;
               textRotating.innerHTML = texts[currentIndex];
             }, 2 * 1000); */
+
+            // Mengambil elemen tombol toggle dan menu
+
+
           </script>
-
-          <style>
-            .text-rotating {
-              overflow: hidden;
-              border-right: .15em solid orange;
-              /* Simulasikan kursor */
-              white-space: nowrap;
-              /* Mencegah pemisahan kata */
-              margin: 0 auto;
-              /* Memusatkan teks jika diperlukan */
-              letter-spacing: .15em;
-              /* Ruang antar huruf */
-              animation:
-                typing 3s steps(40, end),
-                blinking-caret .75s step-end infinite;
-            }
-
-            /* Animasi ketik */
-            @keyframes typing {
-              from {
-                width: 0;
-              }
-
-              to {
-                width: 100%;
-              }
-            }
-
-            /* Animasi kursor berkedip */
-            @keyframes blinking-caret {
-
-              from,
-              to {
-                border-color: transparent;
-              }
-
-              50% {
-                border-color: orange;
-              }
-            }
-          </style>
 
           <!-- Fungsi untuk rotasi -->
           <h2><span class="text-rotating"></span></h2>
 
-          <script>
-            // JavaScript untuk mengubah teks rotasi dengan efek ketik dan hapus
-            const textRotating = document.querySelector('.text-rotating');
-            const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
-            let textIndex = 0;
-            let charIndex = 0;
-
-            function typeText() {
-              if (charIndex < texts[textIndex].length) {
-                textRotating.textContent += texts[textIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(typeText, 100); // Waktu antar karakter ketika diketik
-              } else {
-                setTimeout(eraseText, 1500); // Waktu tunda setelah teks selesai ditampilkan
-              }
-            }
-
-            function eraseText() {
-              if (charIndex > 0) {
-                textRotating.textContent = texts[textIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(eraseText, 50); // Waktu antar karakter saat dihapus
-              } else {
-                textIndex = (textIndex + 1) % texts.length;
-                setTimeout(typeText, 500); // Waktu tunda sebelum teks berikutnya diketik
-              }
-            }
-
-            // Mulai animasi
-            typeText();
-
-          </script>
 
 
           <a href="#about" class="btn-scroll scrollto" title="Geser Kebawah"><i class="bx bx-chevron-down"></i></a>
@@ -268,18 +260,15 @@
                   <ul>
 
                     <li><i class="bi bi-chevron-right"></i> <strong>Nama</strong>: &nbsp<span>Ilham Munawar</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>NIM</strong>: &nbsp<span>220102037</span></li>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>NIM</strong>: &nbsp<span>220102037</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Tempat, tanggal lahir</strong>:&nbsp<span>Garut, 14
-                        Januari 2004</span></li>
+                        Januari 2004</span></li> -->
                     <li><i class="bi bi-chevron-right"></i> <strong>Alamat</strong>:&nbsp<span>Cilacap, Jawa
                         tengah</span></li>
-
-
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Usia</strong>: &nbsp<span>19</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Status</strong>: &nbsp<span>Mahasiswa</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Email</strong>: &nbsp<span><a
                           href="https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A10i.munawar@gmail.com"
@@ -416,22 +405,9 @@
               <h4><em>SMAN 5 Garut </h4>
               <h6>Jurusan </h6> &nbsp;&nbsp;&nbsp;&#x2193; <br>MIPA</em>
             </div>
-
+            <!--             
             <div class="resume-item">
-              <h3>SMP</h3>
-              <h5>2017 - 2019</h5>
-              <p>
-              <h4><em>Madrasah Tsanawiyah (MTs)</h4></em></p>
-            </div>
-
-            <div class="resume-item">
-              <h3>SD</h3>
-              <h5>2010 - 2016</h5>
-              <p>
-              <h4><em>SDN Pameungpeuk 2</h4></em></p>
-            </div>
-            <div class="resume-item">
-            </div>
+            </div> -->
           </div>
 
           <!-- <div class="col-lg-6">
@@ -924,6 +900,50 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // JavaScript untuk mengubah teks rotasi dengan efek ketik dan hapus
+    const textRotating = document.querySelector('.text-rotating');
+    const texts = ["Selamat datang", "Semoga harimu menyenangkan", "Enjoyy"];
+    let textIndex = 0;
+    let charIndex = 0;
+
+    function typeText() {
+      if (charIndex < texts[textIndex].length) {
+        textRotating.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, 100); // Waktu antar karakter ketika diketik
+      } else {
+        setTimeout(eraseText, 1500); // Waktu tunda setelah teks selesai ditampilkan
+      }
+    }
+
+    function eraseText() {
+      if (charIndex > 0) {
+        textRotating.textContent = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseText, 50); // Waktu antar karakter saat dihapus
+      } else {
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(typeText, 500); // Waktu tunda sebelum teks berikutnya diketik
+      }
+    }
+
+    // Mulai animasi
+    typeText();
+
+    const toggleButton = document.querySelector('.mobile-nav-toggle');
+    const menu = document.querySelector('#navbar ul');
+
+    // Menambahkan event listener untuk tombol toggle
+    toggleButton.addEventListener('click', () => {
+      // Toggle class 'active' pada menu saat tombol diklik
+      menu.classList.toggle('active');
+    });
+
+
+  </script>
+
 
 </body>
 
